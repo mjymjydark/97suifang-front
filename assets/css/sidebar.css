@@ -9,7 +9,7 @@
     background-color: #F3F3F1;
 }
 
-/* µ¼º½ÑùÊ½ */
+/* å¯¼èˆªæ ·å¼ */
 #nav_container {
 	/*position: absolute;*/
 	font-size: 1.07143em;
@@ -51,7 +51,7 @@
 }
 #nav_container .default_nav {
 	left: 20px;
-	/* µ¼º½µÄ¿í¶È(86+1)*2 */
+	/* å¯¼èˆªçš„å®½åº¦(86+1)*2 */
 	width: 174px;
 	position: absolute;
 	background-color: #F3F3F1;
@@ -76,7 +76,7 @@
     color: #FFF;
 }
 
-/* ¶Ô±ÈÈİÆ÷ÑùÊ½ */
+/* å¯¹æ¯”å®¹å™¨æ ·å¼ */
 #compare_container {
 	margin-top: 26px;
 	padding-left: 18px;

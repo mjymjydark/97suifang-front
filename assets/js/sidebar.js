@@ -1,11 +1,11 @@
 $(document).ready(function(){
-	//ÉìËõÊ½µ¼º½£¬¼æÈİff¡¢ie
+	////ä¼¸ç¼©å¼å¯¼èˆªï¼Œå…¼å®¹ffã€ie
 	$("#nav_container").hover(
 		function(){
-			$(".default_nav").animate({left: "194px"}, {queue:false, duration:300}); //½¥±ä¿é¿í¶È(20px)+µ¼º½¿í¶È(86+1=87px)*2=194px
+			$(".default_nav").animate({left: "194px"}, {queue:false, duration:300}); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(20px)+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(86+1=87px)*2=194px
 		},
 		function(){
-			$(".default_nav").animate({left: "20px"}, {queue:false, duration:300});  //½¥±ä¿é¿í¶È
+			$(".default_nav").animate({left: "20px"}, {queue:false, duration:300});  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 	);
 });
