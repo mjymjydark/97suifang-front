@@ -1,0 +1,12 @@
+#right_container {
+	width: 780px;
+	float: left;
+}
+#index_status_container {
+	width:595px;
+}
+.index_title {
+	color: #4a4a4a;
+	font-size: 18px;
+	font-weight: bold;
+}
