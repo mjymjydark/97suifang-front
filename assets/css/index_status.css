@@ -1,10 +1,10 @@
 #right_container {
-	width: 595px;
+	width: 596px;
 	float: left;
 	margin-left: 37px;
 }
 #index_status_container {
-	width:595px;
+	width:596px;
 }
 .index_title {
 	color: #4a4a4a;
@@ -16,13 +16,118 @@
 	margin-top: 9px;
 	height: 25px;
 	line-height: 25px;
-	background: url('../images/grid-background.png') repeat-x;
+	background-color: #f3f3f1;
 }
 .index_sub_title .content {
 	color: #737173;
 	float: left;
 }
 .index_sub_title .close_icon {
-	color: #737173;
+	background: url('../images/closed.png') no-repeat;
 	float: right;
+	height: 10px;
+	width: 10px;
+	margin: 7px 7px 0 0;
+	cursor: pointer;
+}
+.index_card {
+	width: 279px;
+	height: 375px;
+	border: 1px solid #CACACA;
+	float: left;
+	margin-top: 9px;
+	border-radius: 2px;
+	padding: 5px 5px 0 8px;
+	position: relative;
+}
+.index_card_fir {
+	margin-right: 8px;
+}
+.index_card .card_title {
+	height: 40px;
+	line-height: 40px;
+	color: #7D7D7D;
+	font-weight: bold;
+	font-size: 18px;
+}
+.index_card .refer_range {
+	color: #4B4B4B;
+	font-weight: bold;
+}
+.index_card .refer_range .refer_text {
+	margin-right: 5px;
+}
+.index_card .edit_data {
+	height: 25px;
+	margin-top: 7px;
+}
+.index_card .edit_data .explain_icon {
+	margin: 0 -2px 0 183px;
+}
+.index_card .edit_data .small_edit_icon {
+	cursor: pointer;
+}
+.index_card .edit_icon_container .edit_icon {
+	background: url("../images/pen_large.png") no-repeat;
+	height: 85px;
+	width: 85px;
+	float: left;
+	margin: 40px 0 0 95px;
+	cursor: pointer;
+}
+.index_card .edit_icon_container .curve_icon {
+	background: url("../images/curve.png") no-repeat;
+	height: 125px;
+	width: 97px;
+	float: left;
+}
+.index_card .edit_text {
+	color: #4B4B4B;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 11px;
+}
+.index_card .card_bottom {
+	margin-top: 100px;
+}
+.index_card .card_bottom .understand_index, .index_card .card_bottom .simulation_sheet, .index_card .card_bottom .detail_history {
+	float: left;
+	color: #B9B9B9;
+	cursor: pointer;
+}
+.index_card .card_bottom .understand_index {
+	width: 99px;
+}
+.index_card .card_bottom .simulation_sheet {
+	width: 96px;
+}
+.index_card .card_delete {
+	background: url('../images/closed.png') no-repeat;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5px 5px 0 0;
+	cursor: pointer;
+}
+.act_card_container {
+	width: 291px;
+	float: left;
+	height: 380px;
+}
+.act_card{
+	width: 290px;
+	height: 96px;
+	line-height: 96px;
+	text-align: center;
+	border: 2px dashed #A0A0A0;
+	margin-top: 9px;
+	border-radius: 2px;
+	font-weight: bold;
+	color: #7D7D7D;
+	font-size: 17px;
+	letter-spacing: 1px;
+	cursor: pointer;
 }
