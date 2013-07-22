@@ -112,6 +112,16 @@
 	margin: 5px 5px 0 0;
 	cursor: pointer;
 }
+.index_card .card_delete_hover {
+	background: url('../images/closed_hover.png') no-repeat;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 5px 5px 0 0;
+	cursor: pointer;
+}
 .act_card_container {
 	width: 291px;
 	float: left;
