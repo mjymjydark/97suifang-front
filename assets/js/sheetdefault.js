@@ -7,7 +7,7 @@ $(document).ready(function(){
 	});
 	
 	//卡片点大叉
-	$(".card_delete").hover(
+	$(".card_delete_icon").hover(
 		function(){
 			$(this).removeClass("card_delete");
 			$(this).addClass("card_delete_hover");
@@ -17,7 +17,7 @@ $(document).ready(function(){
 			$(this).addClass("card_delete");
 		}
 	);
-	$(".card_delete").bind("click", function(){
+	$(".card_delete_icon").bind("click", function(){
 		var this_card = $(this).parent();
 		this_card.nextAll().each(function(){
 			if($(this).hasClass("index_card_fir")){
