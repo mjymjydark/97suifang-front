@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	//副标题点大叉
 	$("#index_title_closed_icon").bind("click", function(){
-		$(this).parent().remove();
 		//TODO
+		$(this).parent().remove();
 		return false;
 	});
 	
-	//卡片点大叉
+	//卡片大叉删除交互
 	$(".card_delete_icon").hover(
 		function(){
 			$(this).removeClass("card_delete");
@@ -18,6 +18,7 @@ $(document).ready(function(){
 		}
 	);
 	$(".card_delete_icon").bind("click", function(){
+		//TODO
 		var this_card = $(this).parent();
 		this_card.nextAll().each(function(){
 			if($(this).hasClass("index_card_fir")){
