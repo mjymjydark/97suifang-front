@@ -1,3 +1,4 @@
+var card_2_delete_id;
 $(document).ready(function(){
 	//副标题点大叉
 	$("#index_title_closed_icon").bind("click", function(){
@@ -18,18 +19,20 @@ $(document).ready(function(){
 		}
 	);
 	$(".card_delete_icon").bind("click", function(){
-		//TODO
-		var this_card = $(this).parent();
-		this_card.nextAll().each(function(){
-			if($(this).hasClass("index_card_fir")){
-				$(this).removeClass("index_card_fir");
-				$(this).addClass("index_card_sec");
-			}else if($(this).hasClass("index_card_sec")){
-				$(this).removeClass("index_card_sec");
-				$(this).addClass("index_card_fir");
-			}
-		});
-		this_card.remove();
-		return false;
+		card_2_delete_id = $(this).parent().attr("id").replace('index_card_', '');
 	});
 });
+
+function delete_card(){
+	var card = $("#index_card_"+card_2_delete_id);
+	card.nextAll().each(function(){
+		if($(this).hasClass("index_card_fir")){
+			$(this).removeClass("index_card_fir");
+			$(this).addClass("index_card_sec");
+		}else if($(this).hasClass("index_card_sec")){
+			$(this).removeClass("index_card_sec");
+			$(this).addClass("index_card_fir");
+		}
+	});
+	card.remove();
+}

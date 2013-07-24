@@ -25,8 +25,8 @@
 .index_sub_title .close_icon {
 	background: url('../images/closed.png') no-repeat;
 	float: right;
-	height: 10px;
-	width: 10px;
+	height: 11px;
+	width: 11px;
 	margin: 7px 7px 0 0;
 	cursor: pointer;
 }
@@ -104,8 +104,8 @@
 }
 .index_card .card_delete {
 	background: url('../images/closed.png') no-repeat;
-	width: 10px;
-	height: 10px;
+	width: 11px;
+	height: 11px;
 	position: absolute;
 	top: 0;
 	right: 0;
