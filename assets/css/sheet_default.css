@@ -135,8 +135,11 @@
 	border: 2px dashed #A0A0A0;
 	margin-top: 9px;
 	border-radius: 2px;
-	font-weight: bold;
+}
+.act_card a{
 	color: #7D7D7D;
+	text-decoration: none;
+	font-weight: bold;
 	font-size: 17px;
 	letter-spacing: 1px;
 	cursor: pointer;

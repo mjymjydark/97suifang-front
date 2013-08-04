@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	$(".left>.index_line").hover(
+		function(){
+			$(this).addClass("add");
+		},
+		function(){
+			$(this).removeClass("add");
+		}
+	);
+	$(".right>.index_line").hover(
+			function(){
+				$(this).addClass("minus");
+			},
+			function(){
+				$(this).removeClass("minus");
+			}
+		);
+});
