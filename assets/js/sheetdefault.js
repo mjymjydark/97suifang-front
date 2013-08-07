@@ -120,6 +120,9 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	$(".refresh_icon").bind("click", function(){
+		//TODO
+	});
 });
 
 function delete_card(){

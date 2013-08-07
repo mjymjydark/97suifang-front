@@ -128,6 +128,22 @@
 	height: 23px;
 	cursor: pointer;
 }
+.index_card .refresh_data {
+	height: 23px;
+	line-height: 23px;
+	margin-top: 3px;
+}
+.index_card .refresh_data .refresh_text {
+	float: left;
+	color: #B9B9B9;
+}
+.index_card .refresh_data .refresh_icon {
+	float: right;
+	background: url("../images/refresh.png") no-repeat;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
 .index_card .edit_icon_container .edit_icon {
 	background: url("../images/pen_large.png") no-repeat;
 	height: 85px;
