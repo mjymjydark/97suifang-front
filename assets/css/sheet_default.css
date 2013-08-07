@@ -52,19 +52,80 @@
 }
 .index_card .refer_range {
 	color: #4B4B4B;
-	font-weight: bold;
 }
 .index_card .refer_range .refer_text {
 	margin-right: 5px;
 }
-.index_card .edit_data {
+.index_card .edit_data, .index_card .editing_data {
 	height: 25px;
 	margin-top: 7px;
 }
 .index_card .edit_data .explain_icon {
-	margin: 0 -2px 0 183px;
+	margin-right: 2px;
+	float: right;
 }
 .index_card .edit_data .small_edit_icon {
+	float: right;
+	cursor: pointer;
+}
+.index_card .edit_data .last_edit_data {
+	float: left;
+}
+.index_card .editing_data {
+	display: none;
+}
+.index_card .editing_data .input_container {
+	float: left;
+}
+.index_card .editing_data .input_container input {
+	color: #5C5C5C;
+	background-color: #FFFFFF;
+	border: 1px solid #9C9C9C;
+}
+.index_card .editing_data .input_container .error {
+	border: 1px solid red;
+}
+.index_card .editing_data .input_container .edit_input_main {
+	width: 42px;
+	height: 21px;
+}
+.index_card .editing_data .input_container .edit_input_sub {
+	width: 17px;
+	height: 21px;
+}
+.index_card .editing_data .add_minus_icon {
+	float: left;
+	margin-right: 8px;
+}
+.index_card .editing_data .add_minus_icon .add_icon {
+	background:url(../images/add.png) no-repeat;
+	width: 15px;
+	height: 11px;
+	border-right: 1px solid #9C9C9C;
+	cursor: pointer;
+}
+.index_card .editing_data .add_minus_icon .minus_icon {
+	background:url(../images/minus.png) no-repeat;
+	width: 15px;
+	height: 10px;
+	border-bottom: 1px solid #9C9C9C;
+	border-right: 1px solid #9C9C9C;
+	margin-top: 1px;
+	cursor: pointer;
+}
+.index_card .editing_data .cancel_edit_icon {
+	float: right;
+	background:url(../images/cancel_edit.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.index_card .editing_data .confirm_edit_icon {
+	float: right;
+	background:url(../images/confirm_edit.png) no-repeat;
+	width: 23px;
+	height: 23px;
 	cursor: pointer;
 }
 .index_card .edit_icon_container .edit_icon {
