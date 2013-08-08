@@ -1,7 +1,7 @@
 #right_container {
 	width: 596px;
 	float: left;
-	margin-left: 37px;
+	margin-left: 457px;
 }
 #index_status_container {
 	width:596px;
@@ -87,11 +87,17 @@
 }
 .index_card .editing_data .input_container .edit_input_main {
 	width: 42px;
-	height: 21px;
+	height: 17px;
+	line-height: 17px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 .index_card .editing_data .input_container .edit_input_sub {
 	width: 17px;
-	height: 21px;
+	height: 17px;
+	line-height: 17px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 .index_card .editing_data .add_minus_icon {
 	float: left;
@@ -143,6 +149,29 @@
 	width: 23px;
 	height: 23px;
 	cursor: pointer;
+}
+.index_card .select_date {
+	width: 148px;
+	height: 23px;
+	position: relative;
+	margin-top: 3px;
+	display: none;
+}
+.index_card .select_date .datepicker {
+	background: #FFFFFF;
+	border: 1px solid #9C9C9C;
+	color: #B9B9B9;
+	width: 131px;
+	height: 17px;
+	line-height: 17px;
+	position: relative;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.index_card .select_date .ui-datepicker-trigger {
+	position: absolute;
+	top: 2px;
+	right: 8px;
 }
 .index_card .edit_icon_container .edit_icon {
 	background: url("../images/pen_large.png") no-repeat;

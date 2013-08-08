@@ -30,6 +30,8 @@ $(document).ready(function(){
 	//点击编辑icon
 	$(".small_edit_icon").bind("click", function(){
 		var this_edit_data_div = $(this).parent();
+		var this_select_date_div = this_edit_data_div.siblings(".select_date");
+		var this_refresh_data_div = this_edit_data_div.siblings(".refresh_data");
 		var this_last_edit_data_div = $(this).siblings(".last_edit_data");
 		var this_editing_data_div = this_edit_data_div.siblings(".editing_data");
 		var input_container = this_editing_data_div.children(".input_container");
@@ -38,7 +40,9 @@ $(document).ready(function(){
 		input_container.children(".edit_input_main").val(parseInt(data_fir));
 		input_container.children(".edit_input_sub").val(parseInt(data_sec));
 		this_editing_data_div.show();
+		this_select_date_div.show();
 		this_edit_data_div.hide();
+		this_refresh_data_div.hide();
 		return false;
 	});
 	//点击指数+1 icon
@@ -81,7 +85,9 @@ $(document).ready(function(){
 		input_container.children(".edit_input_sub").val('');
 		var this_editing_data_div = $(this).parent();
 		this_editing_data_div.siblings(".edit_data").show();
+		this_editing_data_div.siblings(".refresh_data").show();
 		this_editing_data_div.hide();
+		this_editing_data_div.siblings(".select_date").hide();
 		return false;
 	});
 	//点击提交icon
@@ -109,13 +115,17 @@ $(document).ready(function(){
 		data_input_fir.val('');
 		data_input_sec.val('');
 		var this_editing_data_div = $(this).parent();
+		var this_select_date_div = this_editing_data_div.siblings(".select_date");
+		var this_refresh_data_div = this_editing_data_div.siblings(".refresh_data");
 		var this_edit_data_div = this_editing_data_div.siblings(".edit_data");
 		var this_last_edit_div = this_edit_data_div.children(".last_edit_data");
 		this_last_edit_div.show();
 		this_last_edit_div.children(".data_fir").html(data_input_fir_val);
 		this_last_edit_div.children(".data_sec").html(data_input_sec_val);
 		this_editing_data_div.hide();
+		this_select_date_div.hide();
 		this_edit_data_div.show();
+		this_refresh_data_div.show();
 		
 		return false;
 	});
@@ -123,6 +133,15 @@ $(document).ready(function(){
 	$(".refresh_icon").bind("click", function(){
 		//TODO
 	});
+	
+	$(".datepicker").datepicker({
+		 showOn: "both",
+		 buttonImage: "../plugins/datepicker/images/calendar.png",
+		 buttonImageOnly: true
+	});
+	$(".datepicker").datepicker("option", "dateFormat", "yy-mm-dd");
+	$(".datepicker").datepicker('option', 'minDate', new Date());
+	$(".datepicker").datepicker($.datepicker.regional['zh-CN']);
 });
 
 function delete_card(){
