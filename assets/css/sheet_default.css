@@ -193,9 +193,10 @@
 	height: 20px;
 	line-height: 20px;
 	margin-top: 11px;
+	margin-bottom: 100px;
 }
-.index_card .card_bottom {
-	margin-top: 100px;
+.index_card .chart {
+	height: 230px;
 }
 .index_card .card_bottom .understand_index, .index_card .card_bottom .simulation_sheet, .index_card .card_bottom .detail_history {
 	float: left;

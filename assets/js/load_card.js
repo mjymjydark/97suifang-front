@@ -5,10 +5,13 @@ $(document).ready(function(){
 	chart12 = new Highcharts.Chart({
 		chart: {
 			renderTo: 'chart_3',
-			type: 'line',
+			type: 'area',
 			marginLeft: 15,
-    		width: 260,
-    		height: 200
+    		height: 223,
+    		spacingTop: 10,
+    		spacingBottom: 0,
+    		overflow: false,
+    		zIndex: 5
 		},
 		credits: {
 			enabled: false
@@ -27,9 +30,10 @@ $(document).ready(function(){
         	gridLineWidth: 1,
         	tickWidth: 0,
 			labels:{
-				step: 3
+				step: 2,
+				maxStaggerLines: 1
 			},
-			tickInterval: (1 * 24 * 3600 * 1000),
+			tickInterval: (4 * 24 * 3600 * 1000),
 			tickColor: '#FFFFFF'
 		},
 		yAxis: {
@@ -51,11 +55,15 @@ $(document).ready(function(){
 		},
 		tooltip: {
 			formatter: function() {
-				return Highcharts.dateFormat('%m月%e日', this.x) +'<br />累计关注度：' + this.y;
+				return '<span style="color:#969696;font-weight:bold;">' + Highcharts.dateFormat('%b %e', this.x) + '</span>' +'<br />' + '<span style="color:#464646;font-weight:bold;">' + this.y + 'mmol/L' + '</span>' + '<br />' + 'click for more info';
 			},
+//			positioner: function (boxWidth, boxHeight, point) {
+//            	return { x: point.plotX+80, y: point.plotY-20 };
+//            },
 			style: {
-				padding: '10px'
-			}
+				padding: '7px'
+			},
+			borderColor: '#EAEAEA'
 		},
 		plotOptions: {
 			series: {
@@ -65,7 +73,11 @@ $(document).ready(function(){
 					lineWidth: 1,
 					radius: 3,  // 点的大小  
 					fillColor: '#FFFFFF' // 设置点中间填充的颜色 
-				}
+				},
+				fillOpacity: 0.12,
+                lineWidth: 1,
+                threshold: null,
+                shadow: false
 			}
 		},
 		series: [{
