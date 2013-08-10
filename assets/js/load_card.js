@@ -92,6 +92,7 @@ $(document).ready(function(){
 			renderTo: 'detail_chart',
 			type: 'area',
 			marginLeft: 25,
+			width: 562,
     		height: 303,
     		spacingTop: 10,
     		spacingBottom: 0,
@@ -151,8 +152,8 @@ $(document).ready(function(){
 				return '<span style="color:#969696;font-weight:bold;">' + Highcharts.dateFormat('%b %e', this.x) + '</span>' +'<br />' + '<span style="color:#464646;font-weight:bold;">' + this.y + 'mmol/L' + '</span>' + '<br />' + 'click for more info';
 			},
 //			positioner: function (boxWidth, boxHeight, point) {
-//            	return { x: point.plotX+80, y: point.plotY-20 };
-//            },
+//          	return { x: point.plotX+80, y: point.plotY-20 };
+//          },
 			style: {
 				padding: '7px'
 			},
@@ -174,9 +175,31 @@ $(document).ready(function(){
 			}
 		},
 		series: [{
-			data: [6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5],
-			pointStart: start_date_UTC_time,
-            pointInterval:1 * 24 * 3600 * 1000
-		}]
+	        data: [6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5],
+	        pointStart: start_date_UTC_time,
+	        pointInterval: 1 * 24 * 3600 * 1000
+	    }]
+	});
+	
+	//详细历史记录
+	$(".detail_history").bind("click", function(){
+		card_detail_id = $(this).closest(".index_card").attr("id").replace('index_card_', '');
+		
+		//TODO ajax, get dataJson & startDateLog
+		var dataJson = [6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5, 5.2, 6.0, 5.9, 5.5, 4.5, 6.2, 6.5];
+		var startDateLog = '2013-08-13';
+		
+		startDateLog = new Date(startDateLog.replace(/-/g,"/"));
+		var start_date_log_UTC_time = startDateLog.getTime() - startDateLog.getTimezoneOffset() * 60 * 1000;
+		var pointStart = start_date_log_UTC_time;
+        var pointInterval = 1 * 24 * 3600 * 1000;
+        
+        detail_chart.addSeries({
+	        data: dataJson,
+	        pointStart: start_date_log_UTC_time,
+	        pointInterval: pointInterval
+	    });
+        
+		$(".detail_card_info").show();
 	});
 });

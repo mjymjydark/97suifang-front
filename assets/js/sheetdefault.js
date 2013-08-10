@@ -1,4 +1,5 @@
 var card_2_delete_id;
+var card_detail_id;
 $(document).ready(function(){
 	//不允许input框复制，减少验证粘帖的交互
 	$("input[type='text']").bind("paste", function(){
@@ -134,6 +135,7 @@ $(document).ready(function(){
 		//TODO
 	});
 	
+	//日期控件
 	$(".datepicker").datepicker({
 		 showOn: "both",
 		 buttonImage: "../plugins/datepicker/images/calendar.png",
@@ -142,6 +144,7 @@ $(document).ready(function(){
 	$(".datepicker").datepicker("option", "dateFormat", "yy-mm-dd");
 	$(".datepicker").datepicker('option', 'minDate', new Date());
 	$(".datepicker").datepicker($.datepicker.regional['zh-CN']);
+	
 });
 
 function delete_card(){

@@ -36,7 +36,8 @@
 	position: relative;
 	float: left;
 	margin-top: 9px;
-	padding: 0 14px 0 20px;
+	padding: 0 14px 6px 20px;
+	display: none;
 }
 .detail_card_info .card_title {
 	height: 32px;
