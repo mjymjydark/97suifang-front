@@ -30,6 +30,99 @@
 	margin: 7px 7px 0 0;
 	cursor: pointer;
 }
+.detail_card_info {
+	width: 562px;
+	border: 1px solid #CACACA;
+	position: relative;
+	float: left;
+	margin-top: 9px;
+	padding: 0 14px 0 20px;
+}
+.detail_card_info .card_title {
+	height: 32px;
+	line-height: 32px;
+	color: #4b4a48;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CACACA;
+}
+.detail_card_info .card_title .collapse_btn {
+	width: 80px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 14px;
+	vertical-align: baseline;
+	position: relative;
+	bottom: -10px;
+	float: right;
+}
+.detail_card_info .search_data_div {
+	margin-top: 9px;
+	margin-bottom: 17px;
+}
+.detail_card_info .search_data_div input[type='button'] {
+	width: 80px;
+	height: 23px;
+	line-height: 23px;
+	float: left;
+}
+.detail_card_info .search_data_div .recent_two_week {
+	margin: 0 22px 0 4px;
+}
+.detail_card_info .search_data_div .unselected {
+	border: 1px solid #9F9F9F;
+	background: #FFFFFF;
+	border-radius: 0;
+	color: #5C5C5C;
+}
+.detail_card_info .search_data_div .datepicker_container {
+	position: relative;
+	float: left;
+}
+.detail_card_info .search_data_div .end_date_container {
+	margin-left: 10px;
+}
+.detail_card_info .search_data_div .datepicker_container .datepicker {
+	background: #FFFFFF;
+	border: 1px solid #9C9C9C;
+	color: #B9B9B9;
+	width: 107px;
+	height: 17px;
+	line-height: 17px;
+	position: relative;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.detail_card_info .search_data_div .datepicker_container .ui-datepicker-trigger {
+	position: absolute;
+	top: 2px;
+	right: 8px;
+}
+.detail_card_info .table_div table {
+	margin-bottom: 0;
+}
+.detail_card_info .table_div table tr {
+	height: 34px;
+}
+.detail_card_info .table_div table tr td {
+	border: 1px solid #CACACA;
+	text-align: center;
+}
+.detail_card_info .table_div table .first_line {
+	background: #99CC33;
+	height: 29px;
+	color: #FFFFFF;
+}
+.detail_card_info .see_more {
+	margin-top: 5px;
+}
+.detail_card_info .see_more .see_more_btn {
+	float: right;
+	width: 107px;
+	height: 24px;
+	line-height: 24px;
+}
 .index_card {
 	width: 279px;
 	height: 375px;

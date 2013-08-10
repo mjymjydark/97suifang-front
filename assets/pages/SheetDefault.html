@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="../plugins/datepicker/language-zh-CN.js"></script>
 	<script type="text/javascript" src="../plugins/thickbox/thickbox.js"></script>
 	<script type="text/javascript" src="../plugins/highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="../plugins/highcharts/highcharts-more.js"></script>
 	<script type="text/javascript" src="../js/sheetdefault.js"></script>
 	<script type="text/javascript" src="../js/load_card.js"></script>
 </head>
@@ -189,6 +190,69 @@
 					<div style="clear:both;"></div>
 				</div>
 				<a class="card_delete_icon card_delete thickbox" href="popup/DeleteCardTip.html?TB_iframe=true&no1_title&transfer_params&height=166&width=630&card_id=4"></a>
+			</div>
+			
+			<div class="detail_card_info">
+				<div class="card_title">乙肝病毒核算定量 (PCR)4<input class="collapse_btn" type="button" value="收 起" /></div>
+				<div class="search_data_div">
+					<input class="recent_one_week" type="button" value="最近1周" />
+					<input class="recent_two_week unselected" type="button" value="最近2周" />
+					<div class="datepicker_container">
+						<label class="start_label">起始日期</label>
+						<input class="datepicker start_date" type="text" value="" />
+					</div>
+					<div class="datepicker_container end_date_container">
+						<label>截至日期</label>
+						<input class="datepicker end_date" type="text" value="" />
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="detail_chart"></div>
+				<div class="table_div">
+					<table width="100%">
+						<tr class="first_line">
+							<td width="122px">日期</td>
+							<td width="124px">时间</td>
+							<td width="312px">记录</td>
+						</tr>
+						<tr>
+							<td>2013-07-09</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-10</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-11</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-12</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-13</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-14</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+						<tr>
+							<td>2013-07-15</td>
+							<td>11:20</td>
+							<td>100x10^4拷贝/mL</td>
+						</tr>
+					</table>
+				</div>
+				<div class="see_more"><input class="see_more_btn" type="button" value="浏览更多记录" /></div>
 			</div>
 			
 			<div class="act_card_container">
