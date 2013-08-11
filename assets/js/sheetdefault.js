@@ -136,15 +136,26 @@ $(document).ready(function(){
 	});
 	
 	//日期控件
-	$(".datepicker").datepicker({
+	$(".select_date>.datepicker").datepicker({
 		 showOn: "both",
 		 buttonImage: "../plugins/datepicker/images/calendar.png",
 		 buttonImageOnly: true
 	});
-	$(".datepicker").datepicker("option", "dateFormat", "yy-mm-dd");
-	$(".datepicker").datepicker('option', 'minDate', new Date());
-	$(".datepicker").datepicker($.datepicker.regional['zh-CN']);
 	
+	//时间范围控制（开始时间<结束时间）
+	$("#search_start_date").datepicker({
+		showOn: "both",
+		buttonImage: "../plugins/datepicker/images/calendar.png",
+		buttonImageOnly: true,
+		onClose: function( selectedDate ) {
+			$("#search_end_date").datepicker("option", "minDate", selectedDate);
+		}
+	});
+	$("#search_end_date").datepicker({
+		onClose: function( selectedDate ) {
+			$("#search_start_date").datepicker("option", "maxDate", selectedDate);
+		}
+	});
 });
 
 function delete_card(){
