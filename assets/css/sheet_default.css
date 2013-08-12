@@ -294,8 +294,11 @@
 }
 .index_card .card_bottom .understand_index, .index_card .card_bottom .simulation_sheet, .index_card .card_bottom .detail_history {
 	float: left;
+}
+.index_card .card_bottom .understand_index a, .index_card .card_bottom .simulation_sheet a, .index_card .card_bottom .detail_history a {
 	color: #B9B9B9;
 	cursor: pointer;
+	text-decoration: none;
 }
 .index_card .card_bottom .understand_index {
 	width: 99px;
