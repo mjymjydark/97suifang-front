@@ -21,6 +21,7 @@
 	<div id="right_container">
 		<div id="index_status_container">
 			<div class="index_title">指标状态</div>
+			<!-- 这里需要后端读取cookie，来判断用户是否已经点击大叉。若否，则显示；若是，则隐藏 -->
 			<div class="index_sub_title">
 				<div class="content">以下可能是您感兴趣的指标，您可以点击卡片右上角“X”，取消关注。</div>
 				<div class="close_icon" id="index_title_closed_icon"></div>
@@ -60,8 +61,8 @@
 				<div class="edit_text">点击右上角的按钮可以编辑数据</div>
 				<div class="card_bottom">
 					<div class="understand_index"><a class="thickbox" href="popup/IndexDesc.html?TB_iframe=true&no1_title&transfer_params&height=351&width=630&card_id=1">了解该指标</a></div>
-					<div class="simulation_sheet">仿真化验单</div>
-					<div class="detail_history">详细历史记录</div>
+					<div class="simulation_sheet"><a href="../images/demo_sheet.png" class="thickbox">仿真化验单</a></div>
+					<div class="detail_history"><a href="javascript:void(0)">详细历史记录</a></div>
 					<div style="clear:both;"></div>
 				</div>
 				<!-- thickbox插件，方便父级页面与子级弹出层的MVC隔离，方便子级弹出层的复杂需求，如：搜索、分页… -->
@@ -102,8 +103,8 @@
 				<div class="edit_text">点击右上角的按钮可以编辑数据</div>
 				<div class="card_bottom">
 					<div class="understand_index"><a class="thickbox" href="popup/IndexDesc.html?TB_iframe=true&no1_title&transfer_params&height=351&width=630&card_id=2">了解该指标</a></div>
-					<div class="simulation_sheet">仿真化验单</div>
-					<div class="detail_history">详细历史记录</div>
+					<div class="simulation_sheet"><a href="../images/demo_sheet.png" class="thickbox">仿真化验单</a></div>
+					<div class="detail_history"><a href="javascript:void(0)">详细历史记录</a></div>
 					<div style="clear:both;"></div>
 				</div>
 				<a class="card_delete_icon card_delete thickbox" href="popup/DeleteCardTip.html?TB_iframe=true&no1_title&transfer_params&height=166&width=630&card_id=2"></a>
@@ -144,8 +145,8 @@
 				<div id="chart_3" class="chart"></div>
 				<div class="card_bottom">
 					<div class="understand_index"><a class="thickbox" href="popup/IndexDesc.html?TB_iframe=true&no1_title&transfer_params&height=351&width=630&card_id=3">了解该指标</a></div>
-					<div class="simulation_sheet">仿真化验单</div>
-					<div class="detail_history">详细历史记录</div>
+					<div class="simulation_sheet"><a href="../images/demo_sheet.png" class="thickbox">仿真化验单</a></div>
+					<div class="detail_history"><a href="javascript:void(0)">详细历史记录</a></div>
 					<div style="clear:both;"></div>
 				</div>
 				<a class="card_delete_icon card_delete thickbox" href="popup/DeleteCardTip.html?TB_iframe=true&no1_title&transfer_params&height=166&width=630&card_id=3"></a>
@@ -185,8 +186,8 @@
 				</div>
 				<div class="card_bottom">
 					<div class="understand_index"><a class="thickbox" href="popup/IndexDesc.html?TB_iframe=true&no1_title&transfer_params&height=351&width=630&card_id=4">了解该指标</a></div>
-					<div class="simulation_sheet">仿真化验单</div>
-					<div class="detail_history">详细历史记录</div>
+					<div class="simulation_sheet"><a href="../images/demo_sheet.png" class="thickbox">仿真化验单</a></div>
+					<div class="detail_history"><a href="javascript:void(0)">详细历史记录</a></div>
 					<div style="clear:both;"></div>
 				</div>
 				<a class="card_delete_icon card_delete thickbox" href="popup/DeleteCardTip.html?TB_iframe=true&no1_title&transfer_params&height=166&width=630&card_id=4"></a>

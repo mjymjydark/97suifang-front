@@ -8,8 +8,20 @@ $(document).ready(function(){
 	
 	//副标题点大叉
 	$("#index_title_closed_icon").bind("click", function(){
-		//TODO
-		$(this).parent().remove();
+		var clostBtn = $(this);
+		var date = new Date();
+		var time = date.getTime();
+		$.ajax({  //数据库还是cookie，都可以，建议使用cookie，html中是否显示sub_title也由后端读取的cookie决定
+			type: 'get',
+			url: '../ajax/close_sub_title',
+			data: 'time='+time,
+			success: function(data){
+				if(data == 'success'){
+					clostBtn.parent().remove();
+				}
+			}
+		});
+		
 		return false;
 	});
 	

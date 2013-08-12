@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-	<title>页面4</title>
+	<title>添加或删除关注指标</title>
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="../plugins/thickbox/thickbox.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/new_delete_index.css"/>
@@ -16,25 +16,27 @@
 		<div class="new_delete_title">
 			<div class="content">添加或删除关注指标</div>
 			<div class="search">
-				<input type="text" value="" placeholder="直接搜索指标" autocomplete="off" />
-				<img style="" src="../images/search.png">
+				<input type="text" value="" placeholder="直接搜索指标" id="search_kw" autocomplete="off" />
+				<img id="search_btn" src="../images/search.png">
 			</div>
 			<div style="clear: both;"></div>
 		</div>
 		<div class="index_navigation">
-			<div class="index_type selected">血常规</div>
-			<div class="index_type">两对半</div>
-			<div class="index_type">肝功能</div>
-			<div class="index_type">肝穿刺</div>
-			<div class="index_type">血常规</div>
-			<div class="index_type">两对半</div>
-			<div class="index_type">肝功能</div>
-			<div class="index_type" id="index_all">所有指标</div>
+			<!-- 根据url的参数tab，给对应div的class加 selected 样式 -->
+			<div class="index_type selected"><a href="?tab=1">血常规</a></div>
+			<div class="index_type"><a href="?tab=2">两对半</a></div>
+			<div class="index_type"><a href="?tab=3">肝功能</a></div>
+			<div class="index_type"><a href="?tab=4">肝穿刺</a></div>
+			<div class="index_type"><a href="?tab=5">血常规</a></div>
+			<div class="index_type"><a href="?tab=6">两对半</a></div>
+			<div class="index_type"><a href="?tab=7">肝功能</a></div>
+			<div class="index_type" id="index_all"><a href="?tab=all">所有指标</a></div>
 			<div style="clear:both;"></div>
 		</div>
 		<div class="show_indexes">
 			<div class="index_container">
 				<!-- 所有的展示 -->
+				<!-- 若url的参数tab 为 all， 则把该div的 display style 设为block； 不然，则设为none -->
 				<div class="all_condition" style="display: block;">
 					<div class="index_all_title">所有指标</div>
 					<div class="index_all_letter">
@@ -69,7 +71,7 @@
 					<div class="index_letter_container">
 						<div class="index_lines A">
 							<div class="letter_title">A</div>
-							<div class="index_line">
+							<div class="index_line" index_id="1">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -78,7 +80,7 @@
 						</div>
 						<div class="index_lines B">
 							<div class="letter_title">B</div>
-							<div class="index_line">
+							<div class="index_line" index_id="2">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -87,7 +89,7 @@
 						</div>
 						<div class="index_lines C">
 							<div class="letter_title">C</div>
-							<div class="index_line">
+							<div class="index_line" index_id="3">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -96,7 +98,7 @@
 						</div>
 						<div class="index_lines D">
 							<div class="letter_title">D</div>
-							<div class="index_line">
+							<div class="index_line" index_id="4">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -105,7 +107,7 @@
 						</div>
 						<div class="index_lines E">
 							<div class="letter_title">E</div>
-							<div class="index_line">
+							<div class="index_line" index_id="5">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -114,7 +116,7 @@
 						</div>
 						<div class="index_lines F">
 							<div class="letter_title">F</div>
-							<div class="index_line">
+							<div class="index_line" index_id="6">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -123,7 +125,7 @@
 						</div>
 						<div class="index_lines G">
 							<div class="letter_title">G</div>
-							<div class="index_line">
+							<div class="index_line" index_id="7">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -132,7 +134,7 @@
 						</div>
 						<div class="index_lines H">
 							<div class="letter_title">H</div>
-							<div class="index_line">
+							<div class="index_line" index_id="8">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -141,7 +143,7 @@
 						</div>
 						<div class="index_lines I">
 							<div class="letter_title">I</div>
-							<div class="index_line">
+							<div class="index_line" index_id="9">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -150,7 +152,7 @@
 						</div>
 						<div class="index_lines J">
 							<div class="letter_title">J</div>
-							<div class="index_line">
+							<div class="index_line" index_id="10">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -159,7 +161,7 @@
 						</div>
 						<div class="index_lines K">
 							<div class="letter_title">K</div>
-							<div class="index_line">
+							<div class="index_line" index_id="11">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -168,7 +170,7 @@
 						</div>
 						<div class="index_lines L">
 							<div class="letter_title">L</div>
-							<div class="index_line">
+							<div class="index_line" index_id="12">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -177,7 +179,7 @@
 						</div>
 						<div class="index_lines M">
 							<div class="letter_title">M</div>
-							<div class="index_line">
+							<div class="index_line" index_id="13">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -186,7 +188,7 @@
 						</div>
 						<div class="index_lines N">
 							<div class="letter_title">N</div>
-							<div class="index_line">
+							<div class="index_line" index_id="14">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -195,7 +197,7 @@
 						</div>
 						<div class="index_lines O">
 							<div class="letter_title">O</div>
-							<div class="index_line">
+							<div class="index_line" index_id="15">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -204,7 +206,7 @@
 						</div>
 						<div class="index_lines P">
 							<div class="letter_title">P</div>
-							<div class="index_line">
+							<div class="index_line" index_id="16">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -213,7 +215,7 @@
 						</div>
 						<div class="index_lines Q">
 							<div class="letter_title">Q</div>
-							<div class="index_line">
+							<div class="index_line" index_id="17">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -222,7 +224,7 @@
 						</div>
 						<div class="index_lines R">
 							<div class="letter_title">R</div>
-							<div class="index_line">
+							<div class="index_line" index_id="18">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -231,7 +233,7 @@
 						</div>
 						<div class="index_lines S">
 							<div class="letter_title">S</div>
-							<div class="index_line">
+							<div class="index_line" index_id="19">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -240,7 +242,7 @@
 						</div>
 						<div class="index_lines T">
 							<div class="letter_title">T</div>
-							<div class="index_line">
+							<div class="index_line" index_id="20">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -249,7 +251,7 @@
 						</div>
 						<div class="index_lines U">
 							<div class="letter_title">U</div>
-							<div class="index_line">
+							<div class="index_line" index_id="21">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -258,7 +260,7 @@
 						</div>
 						<div class="index_lines V">
 							<div class="letter_title">V</div>
-							<div class="index_line">
+							<div class="index_line" index_id="22">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -267,7 +269,7 @@
 						</div>
 						<div class="index_lines W">
 							<div class="letter_title">W</div>
-							<div class="index_line">
+							<div class="index_line" index_id="23">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -276,7 +278,7 @@
 						</div>
 						<div class="index_lines X">
 							<div class="letter_title">X</div>
-							<div class="index_line">
+							<div class="index_line" index_id="24">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -285,7 +287,7 @@
 						</div>
 						<div class="index_lines Y">
 							<div class="letter_title">Y</div>
-							<div class="index_line">
+							<div class="index_line" index_id="25">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -294,7 +296,7 @@
 						</div>
 						<div class="index_lines Z">
 							<div class="letter_title">Z</div>
-							<div class="index_line">
+							<div class="index_line" index_id="26">
 								<div class="index_name">乙肝病毒表面抗原</div>
 								<div class="index_category">两对半</div>
 								<div class="icon"></div>
@@ -305,6 +307,7 @@
 				</div>
 				
 				<!-- 搜索后左边的展示 -->
+				<!-- 若url的参数tab 不等于 all，或者 url的参数 kw 不为空，则把该div的 display设置为block；不然，则设为none -->
 				<div class="search_condition" style="display: none;">
 					<div class="index_title_container">
 						<div class="index_title">搜索指标</div>
@@ -312,43 +315,44 @@
 						<div style="clear:both;"></div>
 					</div>
 					<div class="index_lines left">
-						<div class="index_line">
+						<!-- 如若kw参数为空，且tab不等于all（即点击指标类型后的页面），则把 <div class="index_category">XXXX</div> 隐藏掉即可 -->
+						<div class="index_line" index_id="1">
 							<div class="index_name">乙肝病毒表面抗原</div>
 							<div class="index_category">两对半</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="2">
 							<div class="index_name">乙肝病毒S蛋白定量</div>
 							<div class="index_category">血常规</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="3">
 							<div class="index_name">乙肝病毒表面抗体</div>
 							<div class="index_category">血常规</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="4">
 							<div class="index_name">乙肝病毒e抗原</div>
 							<div class="index_category">两对半</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="5">
 							<div class="index_name">乙肝病毒e抗体</div>
 							<div class="index_category">两对半</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="6">
 							<div class="index_name">乙肝病毒核心抗体IaM</div>
 							<div class="index_category">两对半</div>
 							<div class="icon"></div>
 							<div style="clear:both"></div>
 						</div>
-						<div class="index_line">
+						<div class="index_line" index_id="7">
 							<div class="index_name">乙肝病毒核算定量（PCR）</div>
 							<div class="index_category">血常规</div>
 							<div class="icon"></div>
@@ -361,46 +365,51 @@
 			<div class="index_container">
 				<div class="index_title_container">
 					<div class="index_title">已关注指标</div>
-					<div class="index_btn"><input type="submit" value="提交" /></div>
+					<div class="index_btn">
+						<form id="index_form" method="post" action="">
+							<input type="button" id="submitIndexBtn" value="提交" />
+							<input type="hidden" id="commit_index" name="commit_index" value="" />
+						</form>
+					</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="index_lines right">
-					<div class="index_line">
+					<div class="index_line" index_id="1">
 						<div class="index_name">V-谷丙氨酰转氨酶</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="2">
 						<div class="index_name">总胆红素</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="3">
 						<div class="index_name">乙肝病毒表面抗原</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="4">
 						<div class="index_name">乙肝病毒表面抗体</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="5">
 						<div class="index_name">乙肝病毒e抗体</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="6">
 						<div class="index_name">乙肝病毒核算定量（PCR）</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="7">
 						<div class="index_name">乙肝病毒基因型C型</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
 					</div>
-					<div class="index_line">
+					<div class="index_line" index_id="8">
 						<div class="index_name">乙肝病毒型混合型</div>
 						<div class="icon"></div>
 						<div style="clear:both"></div>
