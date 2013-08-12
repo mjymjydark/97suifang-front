@@ -27,7 +27,7 @@ function TB_init(){
 function TB_show(caption, url, imageGroup) {//function called when the user clicks on a thickbox link
 	try {
 		if (document.getElementById("TB_HideSelect") == null) {
-		$("body").append("<iframe id='TB_HideSelect'></iframe><div id='TB_overlay'></div><div id='TB_window'></div>");
+		$("body").append("<iframe frameborder='no' marginheight='0' marginwidth='0' border='0' id='TB_HideSelect'></iframe><div id='TB_overlay'></div><div id='TB_window'></div>");
 		$("#TB_overlay").click(TB_remove);
 		}
 		
@@ -172,7 +172,7 @@ function TB_show(caption, url, imageGroup) {//function called when the user clic
 				}else{
 					urlNoQuery = url;
 				}
-				$("#TB_window").append("<iframe src='"+urlNoQuery+"' id='TB_iframeContent' style='width:"+(ajaxContentW)+"px;height:"+(ajaxContentH)+"px;'></iframe>");
+				$("#TB_window").append("<iframe frameborder='no' marginheight='0' marginwidth='0' border='0' src='"+urlNoQuery+"' id='TB_iframeContent' style='width:"+(ajaxContentW)+"px;height:"+(ajaxContentH)+"px;'></iframe>");
 			}else{
 				$("#TB_window").append("<div id='TB_ajaxContent' style='width:"+ajaxContentW+"px;height:"+ajaxContentH+"px;'></div>");
 			}
