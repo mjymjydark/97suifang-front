@@ -1,3 +1,4 @@
+var detail_chart;
 $(document).ready(function(){
 	var startDate = '2013-07-13';
 	startDate = new Date(startDate.replace(/-/g,"/"));
@@ -87,7 +88,7 @@ $(document).ready(function(){
 		}]
 	});
 	
-	var detail_chart = new Highcharts.Chart({
+	detail_chart = new Highcharts.Chart({
 		chart: {
 			renderTo: 'detail_chart',
 			type: 'area',
@@ -172,7 +173,16 @@ $(document).ready(function(){
 				fillOpacity: 0.12,
                 lineWidth: 1,
                 threshold: null,
-                shadow: false
+                shadow: false,
+                point: {
+	                events: {
+						click: function() {
+							alert(this.x);
+							alert(this.y);
+							TB_show(false, '../pages/popup/EditHistoryData.html?TB_iframe=true&no1_title&transfer_params&height=351&width=630&card_id=3', false);
+						}
+					}
+				}
 			}
 		},
 		series: []
