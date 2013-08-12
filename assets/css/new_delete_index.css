@@ -2,6 +2,10 @@
 	float: left;
 	margin-left: 37px;
 }
+.new_delete_title {
+	width: 596px;
+	height: 26px;
+}
 .new_delete_title .content {
 	float: left;
 	font-weight: bold;
@@ -14,10 +18,10 @@
 	float: right;
 	height: 26px;
 	line-height: 26px;
-	width: 153px;
 	position: relative;
 }
 .new_delete_title .search input {
+	float: left;
 	height: 20px;
 	width: 127px;
 	border: 1px solid #CACACA;
@@ -26,14 +30,15 @@
 	border-radius: 2px;
 	color: #000000;
 	position: relative;
-	top: -4px;
-	margin-right: -2px;
+	top: 2px;
+	margin-right: 2px;
 }
 .new_delete_title .search input::-moz-placeholder {
 	color: #9D9D9D;
 	font-weight: bold;
 }
 .new_delete_title .search img {
+	float: right;
 	position: relative;
 	top: 2px;
 	cursor: pointer;

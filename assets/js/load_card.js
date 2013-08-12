@@ -196,6 +196,7 @@ $(document).ready(function(){
 		var date = new Date();
 		var time = date.getTime();
 		redraw_chart(detail_chart, startDateLog, endDateLog);
+		$(".act_card_container").addClass("move_div_2_left");
 		return false;
 	});
 	
@@ -238,6 +239,8 @@ $(document).ready(function(){
         $(".detail_card_info").hide();
         //初始化详细卡片id
         card_detail_id = 0;
+        //添加删除div位置初始化
+        $(".act_card_container").removeClass("move_div_2_left");
         return false;
 	});
 });

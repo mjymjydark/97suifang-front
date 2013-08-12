@@ -143,10 +143,6 @@ $(document).ready(function(){
 		return false;
 	});
 	
-	$(".refresh_icon").bind("click", function(){
-		//TODO
-	});
-	
 	//日期控件
 	$(".select_date>.datepicker").datepicker({
 		 showOn: "both",
