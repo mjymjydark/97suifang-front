@@ -1,9 +1,9 @@
 #new_delete_container {
 	float: left;
-	margin-left: 37px;
+	margin-left: 457px;
 }
 .new_delete_title {
-	width: 596px;
+	width: 696px;
 	height: 26px;
 }
 .new_delete_title .content {
@@ -75,13 +75,12 @@
 }
 .show_indexes .index_container {
 	float: left;
-	width: 252px;
+	width: 302px;
 	height: 437px;
 	border: 1px solid #b6b6b6;
 	z-index: 1;
 	position: relative;
 	padding: 6px 12px 0 12px;
-	overflow: hidden;
 }
 .show_indexes .add_concerned_icon {
 	float: left;
@@ -128,6 +127,7 @@
 .index_line .index_name, .index_line .index_category {
 	float: left;
 	font-size: 14px;
+	width: 45px;
 	height: 20px;
 	line-height: 20px;
 	color: #4A4A4A;
@@ -180,6 +180,11 @@
 	margin-right: 4px;
 	cursor: pointer;
 }
+.index_letter_container {
+	height: 360px;
+	position: relative;
+	overflow: auto;
+}
 .index_letter_container .index_lines {
 	margin-bottom: 46px;
 }
@@ -189,4 +194,9 @@
 	color: #4A4A4A;
 	border-bottom: 1px solid #BFBFBF;
 	height: 24px;
+}
+.show_indexes .index_container .right {
+	position: relative;
+	height: 405px;
+	overflow: auto;
 }

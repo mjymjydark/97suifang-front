@@ -1,10 +1,10 @@
 #right_container {
-	width: 596px;
+	width: 696px;
 	float: left;
 	margin-left: 457px;
 }
 #index_status_container {
-	width: 596px;
+	width: 696px;
 }
 .index_title {
 	color: #4a4a4a;
@@ -31,7 +31,7 @@
 	cursor: pointer;
 }
 .detail_card_info {
-	width: 562px;
+	width: 662px;
 	border: 1px solid #CACACA;
 	position: relative;
 	float: left;
@@ -126,7 +126,7 @@
 	line-height: 24px;
 }
 .index_card {
-	width: 278px;
+	width: 328px;
 	height: 375px;
 	border: 1px solid #CACACA;
 	margin-top: 9px;
@@ -334,11 +334,11 @@
 	cursor: pointer;
 }
 .act_card_container {
-	width: 293px;
+	width: 343px;
 	height: 380px;
 }
 .act_card{
-	width: 290px;
+	width: 340px;
 	height: 96px;
 	line-height: 96px;
 	text-align: center;

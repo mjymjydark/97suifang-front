@@ -51,10 +51,10 @@ $(document).ready(function(){
 		return false;
 	});
 	$(".all_condition>.index_all_letter>div").bind("click", function(){
-		$(".index_letter_container>.index_lines").hide();
+		var container = $(".index_letter_container");
 		var letterClass = $(this).text();
-		$("."+letterClass).show();
-		$("."+letterClass).nextAll().show();
+		var scrollTo = $("."+letterClass);
+		container.scrollTop(scrollTo.offset().top - container.offset().top + container.scrollTop());
 		return false;
 	});
 	$("#submitIndexBtn").bind("click", function(){
