@@ -1,6 +1,101 @@
+#login_container {
+	float: left;
+	position: relative;
+	z-index: 999;
+	width: 875px;
+	height: 185px;
+	margin-left: 490px;
+}
+.logged-in {
+	float: right;
+	margin-top: 26px;
+	right: 16px;
+}
+#login.logged-in .user-name, #login.logged-in .user-level, #login.logged-in .user-photo, #login.logged-in .drop-down-menu-button {
+    vertical-align: bottom;
+}
+#login.logged-in .user-photo {
+	position: relative;
+	top: 2px;
+}
+#login.logged-in .user-level {
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0.05em 0.25em 0.05em 0.2em;
+}
+.green-block {
+    background-color: #7BB81B;
+    color: #FFFFFF;
+}
+.number-block {
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Courier New","DejaVu Sans Mono",monospace,sans-serif,"STHeiti","WenQuanYi Micro Hei","Microsoft YaHei",SimSun,sans-serif;
+    text-align: center;
+    width: 1.3em;
+}
+#login.logged-in .drop-down-area {
+    cursor: pointer;
+}
+#login.logged-in .user-name {
+    font-size: 1.14286em;
+    font-weight: bold;
+    line-height: 1em;
+}
+#login.logged-in .drop-down-menu {
+    background-color: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 10px rgba(85, 85, 85, 0.5);
+    color: #000000;
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 999;
+    width: 168px;
+    height: 91px;
+}
+#login.logged-in .drop-down-menu .text-pointer {
+    background: url("../images/login-menu-popup-pointer.png") no-repeat scroll 0 0 transparent;
+    height: 8px;
+    left: 100px;
+    margin-left: -10px;
+    position: absolute;
+    top: -8px;
+    width: 20px;
+}
+#login.logged-in .drop-down-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+#login.logged-in .drop-down-menu ul li {
+    border-bottom: 1px solid #EFEFEF;
+    padding: 2px;
+}
+#login.logged-in .drop-down-menu ul li a {
+    border-radius: 2px 2px 2px 2px;
+    color: inherit;
+    display: block;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    text-decoration: none;
+    width: 150px;
+}
+#login.logged-in .drop-down-menu ul li.last {
+    border-bottom: medium none;
+}
+#login.logged-in .drop-down-menu.open {
+    display: block;
+}
+
+
+
 #new_delete_container {
 	float: left;
 	margin-left: 457px;
+	position: absolute;
+	margin-top: 85px;
 }
 .new_delete_title {
 	width: 696px;

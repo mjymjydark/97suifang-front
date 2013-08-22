@@ -1,4 +1,20 @@
 $(document).ready(function(){
+	/************************ 登录控件交互 Start ********************************/
+	$(".drop-down-area").bind("click", function(){
+		var drop_down_menu = $(".drop-down-menu");
+		if(drop_down_menu.hasClass("open")){
+			drop_down_menu.removeClass("open");
+		}else{
+			drop_down_menu.addClass("open");
+		}
+		return false;
+	});
+	$("body").bind("click", function(){
+		$(".drop-down-menu").removeClass("open");
+	});
+	/************************ 登录控件交互 Start ********************************/
+	
+	
 	$("#search_btn").bind("click", function(){
 		var kw = $("#search_kw").val();
 		window.location.href = '?kw='+kw;
