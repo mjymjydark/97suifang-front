@@ -175,6 +175,9 @@ $(document).ready(function(){
 		}
 	});
 	$("#search_end_date").datepicker({
+		showOn: "both",
+		buttonImage: "../plugins/datepicker/images/calendar.png",
+		buttonImageOnly: true,
 		onClose: function( selectedDate ) {
 			$("#search_start_date").datepicker("option", "maxDate", selectedDate);
 		}

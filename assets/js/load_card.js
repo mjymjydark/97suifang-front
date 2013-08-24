@@ -93,7 +93,7 @@ $(document).ready(function(){
 			renderTo: 'detail_chart',
 			type: 'area',
 			marginLeft: 25,
-			width: 562,
+			width: 672,
     		height: 303,
     		spacingTop: 10,
     		spacingBottom: 0,
