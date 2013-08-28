@@ -86,6 +86,7 @@
 #compare_container .post-question .searchdiv .question {
 	width: 289px;
 	height: 29px;
+	line-height: normal;
 	border: 1px solid #c1b59d;
 }
 #compare_container .post-question .searchdiv .submit {
