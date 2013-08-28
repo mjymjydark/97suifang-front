@@ -1,4 +1,24 @@
+var select_letter = '';
+var select_index_obj = null;
 $(document).ready(function(){
+	$(".index_type").each(function(){
+		if($(this).hasClass("selected")){
+			select_index_obj = $(this);
+			return false;
+		}
+	});
+	console.log(select_index_obj);
+	$(".index_type").hover(
+		function(){
+			$(this).addClass("selected");
+		},
+		function(){
+			if(!$(this).is(select_index_obj)){
+				$(this).removeClass("selected");
+			}
+		}
+	);
+	
 	/************************ 登录控件交互 Start ********************************/
 	$(".drop-down-area").bind("click", function(){
 		var drop_down_menu = $(".drop-down-menu");
@@ -67,12 +87,25 @@ $(document).ready(function(){
 		return false;
 	});
 	$(".all_condition>.index_all_letter>div").bind("click", function(){
+		$(".letter_selected").removeClass("letter_selected");
+		$(this).addClass("letter_selected");
 		var container = $(".index_letter_container");
 		var letterClass = $(this).text();
 		var scrollTo = $("."+letterClass);
 		container.scrollTop(scrollTo.offset().top - container.offset().top + container.scrollTop());
+		select_letter = letterClass;
 		return false;
 	});
+	$(".all_condition>.index_all_letter>div").hover(
+		function(){
+			$(this).addClass("letter_selected");
+		},
+		function(){
+			if(select_letter != $(this).text()){
+				$(this).removeClass("letter_selected");
+			}
+		}
+	);
 	$("#submitIndexBtn").bind("click", function(){
 		var commit_index = '';
 		$(".right>.index_line").each(function(){

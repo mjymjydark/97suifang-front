@@ -282,6 +282,9 @@
 	margin-right: 4px;
 	cursor: pointer;
 }
+.all_condition .index_all_letter .letter_selected{
+	color: #99CC33;
+}
 .index_letter_container {
 	height: 360px;
 	position: relative;
