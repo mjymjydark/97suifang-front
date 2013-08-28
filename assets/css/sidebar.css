@@ -190,6 +190,7 @@
 	height: 37px;
 	border-radius: 3px;
 	margin-top: 8px;
+	cursor: pointer;
 }
 #compare_container .compare_btn .compare_btn_in{
 	border: 1px solid #b8db71;
@@ -207,6 +208,13 @@
    	font-size: 18px;
    	text-align: center;
    	border-radius: 3px;
+}
+#compare_container .compare_btn .compare_btn_in:hover {
+	background: #93C431;
+}
+#compare_container .compare_btn .compare_btn_in:active {
+	background: #8AB82E;
+	box-shadow: 0 0 10px rgba(85 85 85 0.5) inset;
 }
 #compare_container .logo_container {
 	margin-top: 30px;
