@@ -241,10 +241,10 @@
 .index_lines .add .icon {
 	width: 20px;
 	height: 20px;
-	float: right;
 	background: url("../images/addicon.png");
-	margin-right: 2px;
 	cursor: pointer;
+	position: absolute;
+	left: 260px;
 }
 .index_lines .add .index_name, .index_lines .add .index_category, .index_lines .minus .index_name {
 	color: #FFFFFF;
@@ -252,10 +252,10 @@
 .index_lines .minus .icon {
 	width: 20px;
 	height: 20px;
-	float: right;
 	background: url("../images/minusicon.png");
-	margin-right: 2px;
 	cursor: pointer;
+	position: absolute;
+	left: 260px;
 }
 .index_lines .add, .index_lines .minus {
 	background: #8FC31F;
