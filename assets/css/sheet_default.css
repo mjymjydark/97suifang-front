@@ -95,9 +95,9 @@
 #right_container {
 	width: 696px;
 	float: left;
-	margin-left: 490px;
 	position: absolute;
-	margin-top: 85px;
+	margin : 85px 0 0 490px;
+	padding-bottom: 50px;
 }
 #index_status_container {
 	width: 696px;
