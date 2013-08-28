@@ -18,11 +18,13 @@
 #login.logged-in .user-photo {
 	position: relative;
 	top: 2px;
+	display: none;
 }
 #login.logged-in .user-level {
     font-size: 1em;
     line-height: 1em;
     padding: 0.05em 0.25em 0.05em 0.2em;
+    display: none;
 }
 .green-block {
     background-color: #7BB81B;
