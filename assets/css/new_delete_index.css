@@ -159,6 +159,8 @@
 }
 .index_navigation #index_all {
 	margin-right: 0;
+	float: right;
+	width: 71px;
 }
 .index_navigation .selected {
 	background-color: #99CC33;
