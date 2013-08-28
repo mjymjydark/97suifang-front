@@ -206,10 +206,12 @@
 	color: #4A4A4A;
 	float: left;
 }
-.show_indexes .index_container .index_title_container .example_sheet {
+.show_indexes .index_container .index_title_container .example_sheet a{
 	float: right;
 	color: #4A4A4A;
 	margin-top: 4px;
+	cursor: pointer;
+	text-decoration: none;
 }
 .show_indexes .index_container .index_title_container .index_btn {
 	float: right;
@@ -295,6 +297,11 @@
 	height: 24px;
 }
 .show_indexes .index_container .right {
+	position: relative;
+	height: 405px;
+	overflow: auto;
+}
+.show_indexes .index_container .left {
 	position: relative;
 	height: 405px;
 	overflow: auto;
