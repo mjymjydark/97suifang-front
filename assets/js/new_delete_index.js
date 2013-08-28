@@ -7,7 +7,6 @@ $(document).ready(function(){
 			return false;
 		}
 	});
-	console.log(select_index_obj);
 	$(".index_type").hover(
 		function(){
 			$(this).addClass("selected");
